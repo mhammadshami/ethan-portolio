@@ -130,7 +130,46 @@ const About = () => {
             collaborated on digital products for business and consumer use.
           </p>
           {/* counters */}
-          <div>counters</div>
+          <div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
+            <div className="flex flex-1 xl:gap-x-6">
+              {/* experience */}
+              <div className="flex-1 relative after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={10} duration={5} /> +
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Years of experience
+                </div>
+              </div>
+              {/* clients */}
+              <div className="flex-1 relative after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={250} duration={5} /> +
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Satisfied clients
+                </div>
+              </div>
+              {/* projects */}
+              <div className="flex-1 relative after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={650} duration={5} /> +
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Finished projects
+                </div>
+              </div>
+              {/* awards */}
+              <div className="flex-1 relative">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={8} duration={5} /> +
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Winning awards
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         {/* info */}
         <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
