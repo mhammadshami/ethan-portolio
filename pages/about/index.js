@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 // icons
 import {
   FaHtml5,
@@ -135,7 +136,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 "
           >
-            10 years ago, I began freelancing as a developer. Sine then, I've
+            10 years ago, I began freelancing as a developer. Sine then, I`ve
             done remote work for agencies, consulted for startups, and
             collaborated on digital products for business and consumer use.
           </motion.p>
