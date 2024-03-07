@@ -56,9 +56,6 @@ const Transition = () => {
           ease: "easeInOut",
         }}
       ></motion.div>
-
-      <div>2</div>
-      <div>3</div>
     </>
   );
 };
