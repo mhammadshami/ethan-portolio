@@ -19,8 +19,12 @@ const Home = () => {
         <div>
           {/* title */}
           <h1>
-            Transforming Ideas <br /> Into <span>Digital Reality</span>
+            Your Vision, <span>My Code</span>
           </h1>
+          {/* <h1>
+            
+            Transforming Ideas <br /> Into <span>Digital Reality</span>
+          </h1> */}
         </div>
       </div>
       {/* image */}

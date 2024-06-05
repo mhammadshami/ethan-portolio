@@ -6,6 +6,8 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaNodeJs,
+  FaLaravel,
 } from "react-icons/fa";
 
 import {
@@ -13,7 +15,11 @@ import {
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiMongodb,
+  SiMysql,
 } from "react-icons/si";
+
+import { BiLogoPostgresql } from "react-icons/bi";
 
 // data
 const aboutData = [
@@ -33,42 +39,46 @@ const aboutData = [
         ],
       },
       {
-        title: "UI/UX Design",
+        title: "Backend Development",
+        icons: [<FaNodeJs key={1} />, <FaLaravel key={2} />],
+      },
+      {
+        title: "Databases",
         icons: [
-          <FaFigma key={1} />,
-          <SiAdobexd key={2} />,
-          <SiAdobephotoshop key={3} />,
+          <SiMongodb key={1} />,
+          <SiMysql key={2} />,
+          <BiLogoPostgresql key={3} />,
         ],
       },
     ],
   },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-      },
-    ],
-  },
+  // {
+  //   title: "awards",
+  //   info: [
+  //     {
+  //       title: "Webby Awards - Honoree",
+  //       stage: "2011 - 2012",
+  //     },
+  //     {
+  //       title: "Adobe Design Achievement Awards - Finalist",
+  //       stage: "2009 - 2010",
+  //     },
+  //   ],
+  // },
   {
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Web Developer(Freelance) - Student Project",
+        stage: "1/1/2021 - 1/2/2021",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Web Developer - Escola Libanesa Bissaw",
+        stage: "1/3/2021 - 1/2/2022",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Web Developer - AUB (GHI)",
+        stage: "15/2/2022 - Currently",
       },
     ],
   },
@@ -76,16 +86,8 @@ const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Computer Science - Lebanese University",
+        stage: "10/2014 - 10/2018",
       },
     ],
   },
@@ -111,7 +113,7 @@ const About = () => {
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left ">
       <Circles />
       {/* avatar image */}
-      <motion.div
+      {/* <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
@@ -119,7 +121,7 @@ const About = () => {
         className="hidden xl:flex absolute bottom-0 -left-[370px] "
       >
         <Avatar />
-      </motion.div>
+      </motion.div> */}
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
@@ -130,7 +132,7 @@ const About = () => {
             animate="show"
             exit="hidden"
           >
-            Captivating <span>stories</span> birth magnificent designs.
+            Transforming Visions into <span>Reality</span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -139,9 +141,11 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 "
           >
-            10 years ago, I began freelancing as a developer. Sine then, I`ve
-            done remote work for agencies, consulted for startups, and
-            collaborated on digital products for business and consumer use.
+            I am a dedicated Full Stack Developer with extensive experience in
+            building dynamic and responsive web applications using React and
+            Node.js. With a strong foundation in both front-end and back-end
+            technologies, I specialize in creating seamless user experiences and
+            efficient, scalable server-side solutions
           </motion.p>
           {/* counters */}
           <motion.div
@@ -151,41 +155,23 @@ const About = () => {
             exit="hidden"
             className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
           >
-            <div className="flex flex-1 xl:gap-x-6">
+            <div className="flex flex-1 xl:gap-x-6 w-[300px]">
               {/* experience */}
               <div className="flex-1 relative after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={3} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of experience
                 </div>
               </div>
-              {/* clients */}
-              <div className="flex-1 relative after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied clients
-                </div>
-              </div>
               {/* projects */}
               <div className="flex-1 relative after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} /> +
+                  <CountUp start={0} end={50} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished projects
-                </div>
-              </div>
-              {/* awards */}
-              <div className="flex-1 relative">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Winning awards
                 </div>
               </div>
             </div>
@@ -197,7 +183,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          className="flex flex-col w-full xl:max-w-[48%] h-[235px] sm:h-[480px]"
         >
           <div className="flex gap-x-4 xl:gap-x-8  mx-auto xl:mx-0 mb-4 ">
             {aboutData.map((item, itemIndex) => {

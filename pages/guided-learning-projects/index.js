@@ -38,7 +38,7 @@ const serviceData = [
 ];
 
 // components
-import WorkSlider from "../../components/WorkSlider";
+import WorkSlider from "../../components/LearningProjectsSlider";
 import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
 
@@ -61,7 +61,7 @@ const Work = () => {
               exit="hidden"
               className="h2 xl:mt-12"
             >
-              Work<span className="text-accent">.</span>
+              Bootcamps <span className="text-accent">.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -70,10 +70,12 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Creating responsive and adaptive fullstack web applications that
-              provide an optimal viewing experience across all devices. Using
-              the latest web technologies, I ensure your website looks great and
-              functions flawlessly on desktops, tablets, and smartphones.
+              My journey into the world of programming began with a curiosity
+              that led me to the wealth of knowledge available on YouTube.
+              Through countless hours of tutorials and hands-on practice with
+              the strongest developers on Youtube, I`ve developed a strong
+              foundation in fullstack projects using (React.js, Next.js,
+              drizzle(ORM), Mongodb, Mysql, ....)
             </motion.p>
           </div>
           {/* slider */}
